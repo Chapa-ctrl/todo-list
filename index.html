@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>📝 My To-Do List</h1>
+
+    <div class="container">
+        <div class="top-buttons">
+            <button id="themeToggle">🌗 Theme</button>
+            <button id="sortTasks">🔤 Sort A–Z</button>
+        </div>
+
+        <div class="category-section">
+            <input id="newCategory" placeholder="New Category Name">
+            <button id="addCategory">＋ Add Category</button>
+            <button id="deleteCategory">🗑️ Delete Category</button>
+        </div>
+
+        <select id="categorySelect">
+            <option value="All">All</option>
+        </select>
+
+        <div class="task-input">
+            <input id="taskInput" placeholder="Enter a new task...">
+            <button id="addTask">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

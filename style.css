@@ -1,0 +1,131 @@
+:root {
+    --bg-color: #f5f7fb;
+    --text-color: #222;
+    --accent-color: #4c8bf5;
+    --card-color: #ffffff;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+    --bg-color: #181818;
+    --text-color: #f5f5f5;
+    --accent-color: #7aa2f7;
+    --card-color: #242424;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: var(--card-color);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin-top: 25px;
+    transition: background 0.3s;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+button {
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.15s ease, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 6px 0;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--accent-color);
+}
+
+.category-section {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background: var(--bg-color);
+    margin: 8px 0;
+    padding: 12px 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    transition: background 0.3s, transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+.actions button {
+    margin-left: 5px;
+    padding: 6px 9px;
+    font-size: 12px;
+    border-radius: 6px;
+}
